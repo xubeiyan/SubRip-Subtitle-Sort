@@ -25,10 +25,12 @@
 <div
 	bind:this={wrapper}
 	onscroll={handleScroll}
-	class="relative w-screen shrink-0 overflow-y-auto {wrapperStyle} transition-transform duration-300"
+	class="relative w-screen shrink-0 overflow-y-auto {wrapperStyle} 
+	transition-transform duration-300 snap-normal snap-y snap-mandatory"
 >
 	<section
-		class="h-full flex flex-col gap-4 md:gap-[8rem] justify-center items-center"
+		class="h-full flex flex-col gap-4 md:gap-[8rem] justify-center items-center 
+		snap-start"
 	>
 		<h1 class="text-2xl md:text-6xl text-orange-400">
 			SubRip Subtitle Sort
@@ -51,12 +53,16 @@
 	</section>
 	<section
 		id="more"
-		class="h-full flex flex-col gap-4 md:gap-[2rem] justify-center items-center p-2"
+		class="h-full flex flex-col gap-4 md:gap-[2rem] justify-center items-center p-2 
+		snap-start"
 	>
 		<h1 class="text-orange-500 text-xl md:text-4xl">
 			使用 Svelte 框架开发的 SubRip 字幕重排工具
 		</h1>
-        <p class="text-balance text-center">旨在解决当 VLC 等播放器不能识别乱序排列字幕的 SubRip 文件(.srt)，又不想启动 Aegisub 来调整的时候...</p>
+		<p class="text-balance text-center">
+			旨在解决当 VLC 等播放器不能识别乱序排列字幕的 SubRip
+			文件(.srt)，又不想启动 Aegisub 来调整的时候...
+		</p>
 		<a
 			target="_blank"
 			href="https://github.com/xubeiyan/SubRip-Subtitle-Sort"
