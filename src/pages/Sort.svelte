@@ -87,6 +87,7 @@ flex flex-col md:flex-row gap-4 md:gap-[4rem] p-2 md:p-[2rem]"
 			>
 		{/if}
 		<button
+			type="button"
 			class="size-[4rem] hover:scale-105 absolute {selectBtnStyle}
     grid place-content-center rounded-md"
 			onclick={fileSelect}
@@ -94,6 +95,7 @@ flex flex-col md:flex-row gap-4 md:gap-[4rem] p-2 md:p-[2rem]"
 			<UploadCloudIcon />
 		</button>
 		<button
+			type="button"
 			class="{launchBtnStyle} size-[4rem] hover:scale-105 absolute right-4 bottom-4 bg-rose-400/50
     grid place-content-center rounded-md"
 			onclick={launch}
@@ -117,6 +119,7 @@ flex flex-col md:flex-row gap-4 md:gap-[4rem] p-2 md:p-[2rem]"
 		{/if}
 
 		<button
+			type="button"
 			class="{downloadBtnStyle} size-[4rem] hover:scale-105 absolute left-4 bottom-4
             bg-green-400/50 grid place-content-center rounded-md"
 			onclick={download}

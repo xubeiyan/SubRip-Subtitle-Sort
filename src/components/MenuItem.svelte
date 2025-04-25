@@ -1,10 +1,11 @@
 <script>
-  let { children, onclick = null } = $props();
+	let { children, onclick = null } = $props();
 </script>
 
 <button
-  {onclick}
-  class="size-[3rem] flex justify-center items-center rounded-md bg-purple-100/80 hover:scale-110"
+	type="button"
+	{onclick}
+	class="size-[3rem] flex justify-center items-center rounded-md bg-purple-100/80 hover:scale-110"
 >
-  {@render children()}
+	{@render children()}
 </button>
