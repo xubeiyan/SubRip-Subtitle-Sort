@@ -29,7 +29,7 @@
 	transition-transform duration-300 snap-normal snap-y snap-mandatory"
 >
 	<section
-		class="h-full flex flex-col gap-4 md:gap-[8rem] justify-center items-center 
+		class="h-full flex flex-col gap-4 md:gap-[8rem] justify-center items-center
 		snap-start"
 	>
 		<h1 class="text-2xl md:text-6xl text-orange-400">
@@ -46,14 +46,24 @@
 				type="button"
 				class="outline outline-orange-500/80 hover:outline-2 hover:outline-orange-500
         text-orange-600
-        rounded-md px-4 py-2"
+        rounded-md px-4 py-2 mr-4"
 				onclick={scrollToMore}>了解更多</button
 			>
+			<a
+				href="./example.srt"
+				download="example.srt"
+			>
+				<button
+					type="button"
+					class="cursor-pointer outline hover:outline-2 outline-slate-500
+				rounded-md px-4 py-2 text-gray-500">下载测试文件</button
+				>
+			</a>
 		</div>
 	</section>
 	<section
 		id="more"
-		class="h-full flex flex-col gap-4 md:gap-[2rem] justify-center items-center p-2 
+		class="h-full flex flex-col gap-4 md:gap-[2rem] justify-center items-center p-2
 		snap-start"
 	>
 		<h1 class="text-orange-500 text-xl md:text-4xl">
