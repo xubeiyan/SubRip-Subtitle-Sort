@@ -26,7 +26,7 @@
 	bind:this={wrapper}
 	onscroll={handleScroll}
 	class="relative w-screen shrink-0 overflow-y-auto {wrapperStyle} 
-	transition-transform duration-300 snap-normal snap-y snap-mandatory"
+	transition-transform duration-300 snap-normal snap-y snap-mandatory overflow-y-hidden"
 >
 	<section
 		class="h-full flex flex-col justify-center items-center
