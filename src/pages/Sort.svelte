@@ -20,7 +20,7 @@
 	let selectBtnStyle = $derived(
 		stage == "toUploadFile"
 			? "left-[50%] top-[50%] translate-[-50%] bg-blue-200"
-			: "left-4 bottom-4 bg-blue-400/50",
+			: "left-4 bottom-4 bg-blue-300",
 	);
 
 	let launchBtnStyle = $derived(stage == "toUploadFile" ? "hidden" : "");
@@ -73,8 +73,8 @@
 flex flex-col md:flex-row gap-4 md:gap-[4rem] p-2 md:p-[2rem]"
 >
 	<div
-		class="relative rounded-md h-full w-full flex flex-col gap-2
-     p-2 outline-2 outline-rose-700/50 bg-rose-200/10"
+		class="relative rounded-md h-full w-full flex flex-col gap-2 dark:text-slate-100
+     p-2 outline-2 outline-rose-700/50 bg-rose-200/10 dark:bg-rose-950/60"
 	>
 		{#if filename != null}
 			<h1 class="text-center outline-2 rounded-md outline-rose-600/50">
@@ -96,7 +96,8 @@ flex flex-col md:flex-row gap-4 md:gap-[4rem] p-2 md:p-[2rem]"
 		</button>
 		<button
 			type="button"
-			class="{launchBtnStyle} size-[4rem] hover:scale-105 absolute right-4 bottom-4 bg-rose-400/50
+			class="{launchBtnStyle} size-[4rem] hover:scale-105 absolute right-4 bottom-4 
+			bg-rose-200
     grid place-content-center rounded-md"
 			onclick={launch}
 		>
@@ -104,8 +105,8 @@ flex flex-col md:flex-row gap-4 md:gap-[4rem] p-2 md:p-[2rem]"
 		</button>
 	</div>
 	<div
-		class="relative rounded-md h-full w-full flex flex-col gap-2
-        p-2 outline-2 outline-emerald-700/50 bg-emerald-200/10"
+		class="relative rounded-md h-full w-full flex flex-col gap-2 dark:text-slate-100
+        p-2 outline-2 outline-emerald-700/50 bg-emerald-200/10 dark:bg-emerald-950/60"
 	>
 		{#if sortedFileContent != null}
 			<h1 class="text-center outline-2 rounded-md outline-emerald-600/50">
@@ -121,7 +122,7 @@ flex flex-col md:flex-row gap-4 md:gap-[4rem] p-2 md:p-[2rem]"
 		<button
 			type="button"
 			class="{downloadBtnStyle} size-[4rem] hover:scale-105 absolute left-4 bottom-4
-            bg-green-400/50 grid place-content-center rounded-md"
+            bg-green-200 grid place-content-center rounded-md"
 			onclick={download}
 		>
 			<SaveIcon />

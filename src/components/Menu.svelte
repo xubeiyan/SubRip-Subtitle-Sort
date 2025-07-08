@@ -6,7 +6,7 @@
 	import MenuItem from "./MenuItem.svelte";
 
 	let menuPop = $state(false);
-	let menuBtnStyle = $derived(menuPop ? "bg-purple-100" : "");
+	let menuBtnStyle = $derived(menuPop ? "bg-purple-100 dark:bg-purple-800" : "");
 	let menuStyle = $derived(menuPop ? "" : "hidden");
 
 	const toggleMenu = () => (menuPop = !menuPop);
@@ -19,13 +19,14 @@
 
 <div class="relative flex items-center">
 	<button
-		class="size-[3rem] flex justify-center items-center {menuBtnStyle} hover:bg-purple-200 rounded-md"
+		class="size-[3rem] flex justify-center items-center {menuBtnStyle} 
+			hover:bg-purple-200 hover:dark:bg-purple-900 rounded-md"
 		onclick={toggleMenu}
 	>
 		<MenuIcon />
 	</button>
 	{#if pageState == "sort"}
-		<span class="pl-4 text-orange-400">SubRip Subtitle Sort</span>
+		<span class="pl-4 text-orange-600 dark:text-orange-300">SubRip Subtitle Sort</span>
 	{/if}
 	<div
 		class="mt-2 absolute left-0 top-[100%] {menuStyle} rounded-md flex items-center flex-col gap-2 w-[3em]"

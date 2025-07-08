@@ -5,7 +5,7 @@
 <button
 	type="button"
 	{onclick}
-	class="size-[3rem] flex justify-center items-center rounded-md bg-purple-100/80 hover:scale-110"
+	class="size-[3rem] flex justify-center items-center rounded-md bg-purple-200 dark:bg-purple-100/90 hover:scale-110"
 >
 	{@render children()}
 </button>
