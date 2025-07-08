@@ -2,7 +2,7 @@
 	width="1.5rem"
 	height="1.5rem"
 	viewBox="0 0 24 24"
-	class="fill-slate-800"
+	class="fill-slate-900 dark:fill-slate-200"
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<path
